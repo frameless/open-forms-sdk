@@ -1,5 +1,7 @@
 import {Formio} from 'react-formio';
 
+import './FieldWidth.scss';
+
 const TextField = Formio.Components.components.textfield;
 const HOUSE_NUMBER_REGEX = /^[1-9]\d*(?: ?(?:[a-z]{0,4}|[/-] ?\d+[a-z]{0,4}?))?$/;
 const HouseNumberValidator = {
@@ -52,6 +54,7 @@ export default class HouseNumber extends TextField {
       'utrecht-textbox--html-input',
       'utrecht-textbox--openforms',
       'utrecht-textbox--openforms-house-number-width',
+      'utrecht-textbox--max-length',
     ].join(' ');
     return info;
   }
