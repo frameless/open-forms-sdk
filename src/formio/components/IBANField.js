@@ -1,6 +1,8 @@
 import {electronicFormatIBAN, isValidIBAN} from 'ibantools';
 import {Formio} from 'react-formio';
 
+import './FieldWidth.scss';
+
 const TextField = Formio.Components.components.textfield;
 
 const IbanValidator = {
@@ -46,6 +48,8 @@ export default class IBANField extends TextField {
       'utrecht-textbox',
       'utrecht-textbox--html-input',
       'utrecht-textbox--openforms',
+      'utrecht-textbox--max-length',
+      'utrecht-textbox--openforms-iban-width',
     ].join(' ');
     return info;
   }
