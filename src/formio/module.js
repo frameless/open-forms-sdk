@@ -12,6 +12,7 @@ import DateTimeField from './components/DateTimeField';
 import EditGrid from './components/EditGrid';
 import Email from './components/Email';
 import FileField, {CSRFEnabledUrl} from './components/FileField';
+import HouseNumber from './components/HouseNumber';
 import IBANField from './components/IBANField';
 import LicensePlateField from './components/LicensePlateField';
 import Map from './components/Map';
@@ -40,6 +41,7 @@ const FormIOModule = {
     email: Email,
     currency: Currency,
     number: NumberComponent,
+    houseNumber: HouseNumber,
     content: ContentComponent,
     date: DateField,
     datetime: DateTimeField,
