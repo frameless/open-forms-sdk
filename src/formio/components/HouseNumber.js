@@ -1,7 +1,5 @@
 import {Formio} from 'react-formio';
 
-import './FieldWidth.scss';
-
 const TextField = Formio.Components.components.textfield;
 const HOUSE_NUMBER_REGEX = /^[1-9]\d*(?: ?(?:[a-z]{0,4}|[/-] ?\d+[a-z]{0,4}?))?$/;
 const HouseNumberValidator = {
