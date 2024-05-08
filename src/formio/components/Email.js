@@ -1,5 +1,7 @@
 import {Formio} from 'react-formio';
 
+import './FieldWidth.scss';
+
 /**
  * Extend the default email field to modify it to our needs.
  */
@@ -12,6 +14,8 @@ class Email extends Formio.Components.components.email {
       'utrecht-textbox--html-input',
       'utrecht-textbox--email',
       'utrecht-textbox--openforms',
+      'utrecht-textbox--max-length',
+      'utrecht-textbox--openforms-email-width',
     ].join(' ');
     return info;
   }
