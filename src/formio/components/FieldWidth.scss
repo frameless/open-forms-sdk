@@ -1,0 +1,17 @@
+.utrecht-textbox {
+  min-inline-size: var(--utrecht-pointer-target-min-size, 44px);
+}
+.utrecht-textbox--max-length {
+  inline-size: calc(
+    var(--utrecht-textbox-max-content-size, calc(var(--max-length) * 0.667em + 0.334ch)) +
+      var(--utrecht-textbox-padding-inline-end, var(--utrecht-form-control-padding-inline-end, 0)) +
+      var(
+        --utrecht-textbox-padding-inline-start,
+        var(--utrecht-form-control-padding-inline-start, 0)
+      ) + var(--utrecht-textbox-border-width, var(--utrecht-form-control-border-width, 0))
+  );
+}
+
+.utrecht-textbox--openforms-house-number-width {
+  --max-length: 13;
+}
