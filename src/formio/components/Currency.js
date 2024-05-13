@@ -3,6 +3,8 @@ import FormioUtils from 'formiojs/utils';
 import _, {set} from 'lodash';
 import {Formio} from 'react-formio';
 
+import './FieldWidth.scss';
+
 /**
  * Extend the default text field to modify it to our needs.
  */
@@ -75,6 +77,8 @@ class Currency extends Formio.Components.components.currency {
       'utrecht-textbox',
       'utrecht-textbox--html-input',
       'utrecht-textbox--openforms',
+      'utrecht-textbox--max-length',
+      'utrecht-textbox--openforms-currency-width',
     ].join(' ');
     return info;
   }
