@@ -3,6 +3,7 @@ import {Formio} from 'react-formio';
 
 import {get} from '../../api';
 import enableValidationPlugins from '../validators/plugins';
+import './FieldWidth.scss';
 
 const POSTCODE_REGEX = /^[0-9]{4}\s?[a-zA-Z]{2}$/;
 const HOUSE_NUMBER_REGEX = /^\d+$/;
@@ -25,6 +26,8 @@ class TextField extends Formio.Components.components.textfield {
       'utrecht-textbox',
       'utrecht-textbox--html-input',
       'utrecht-textbox--openforms',
+      'utrecht-textbox--max-length',
+      'utrecht-textbox--openforms-width',
     ].join(' ');
     return info;
   }

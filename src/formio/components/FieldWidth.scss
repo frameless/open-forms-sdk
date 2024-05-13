@@ -12,6 +12,10 @@
   );
 }
 
+.utrecht-textbox--openforms-width {
+  --max-length: 50;
+}
+
 .utrecht-textbox--openforms-house-number-width {
   --max-length: 13;
 }
@@ -27,9 +31,23 @@
 .utrecht-textbox--openforms-currency-width {
   --max-length: 10;
 }
+
 .utrecht-textbox--openforms-date-field-width {
   --max-length: 10;
 }
+
 .utrecht-textbox--openforms-date-time-field-width {
   --max-length: 12;
+}
+
+.utrecht-textbox--openforms-number-field-width {
+  --max-length: 6;
+}
+
+.utrecht-textbox--openforms-password-field-width {
+  --max-length: 50;
+}
+
+.utrecht-textbox--openforms-phone-number-field-width {
+  --max-length: 15;
 }

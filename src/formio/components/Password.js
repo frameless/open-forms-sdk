@@ -1,5 +1,7 @@
 import {Formio} from 'react-formio';
 
+import './FieldWidth.scss';
+
 /**
  * Extend the default password field to modify it to our needs.
  *
@@ -13,6 +15,8 @@ class Password extends Formio.Components.components.password {
       'utrecht-textbox',
       'utrecht-textbox--html-input',
       'utrecht-textbox--openforms',
+      'utrecht-textbox--max-length',
+      'utrecht-textbox--openforms-password-field-width',
     ].join(' ');
     return info;
   }

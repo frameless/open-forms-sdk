@@ -1,6 +1,7 @@
 import {Formio} from 'formiojs';
 
 import enableValidationPlugins from '../validators/plugins';
+import './FieldWidth.scss';
 
 const PhoneNumber = Formio.Components.components.phoneNumber;
 
@@ -40,6 +41,8 @@ class PhoneNumberField extends PhoneNumber {
       'utrecht-textbox',
       'utrecht-textbox--html-input',
       'utrecht-textbox--openforms',
+      'utrecht-textbox--max-length',
+      'utrecht-textbox--openforms-phone-number-field-width',
     ].join(' ');
     return info;
   }

@@ -3,6 +3,7 @@ import {set} from 'lodash';
 import {Formio} from 'react-formio';
 
 import enableValidationPlugins from '../validators/plugins';
+import './FieldWidth.scss';
 
 /**
  * Extend the default text field to modify it to our needs.
@@ -20,6 +21,8 @@ class Number extends Formio.Components.components.number {
       'utrecht-textbox',
       'utrecht-textbox--html-input',
       'utrecht-textbox--openforms',
+      'utrecht-textbox--max-length',
+      'utrecht-textbox--openforms-number-field-width',
     ].join(' ');
     return info;
   }
