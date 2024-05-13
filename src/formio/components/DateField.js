@@ -2,6 +2,8 @@ import {Formio} from 'react-formio';
 
 import MinMaxDateValidator from 'formio/validators/minMaxDateValidator';
 
+import './FieldWidth.scss';
+
 const DateTimeField = Formio.Components.components.datetime;
 
 const extractDate = value => {
@@ -36,6 +38,8 @@ class DateField extends DateTimeField {
       'utrecht-textbox',
       'utrecht-textbox--html-input',
       'utrecht-textbox--openforms',
+      'utrecht-textbox--max-length',
+      'utrecht-textbox--openforms-date-field-width',
     ].join(' ');
     return info;
   }
